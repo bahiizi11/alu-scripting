@@ -6,10 +6,13 @@ Scripting projects for the ALU/Holberton-style curriculum.
 
 Ruby scripts exploring regular expression basics: literal matches,
 repetition tokens, anchors, character classes, and log-line parsing.
+Each script reads its input from a single command-line argument
+(`ARGV[0]`) and prints only the matched portion of the string.
 
 | File | Description |
 | --- | --- |
 | `0-simply_match_school.rb` | Matches the literal word `School` |
+| `0-simply_match_holberton.rb` | Same as above, alternate filename |
 | `1-repetition_token_0.rb` | Repetition token: `*` (0 or more) |
 | `2-repetition_token_1.rb` | Repetition token: `+` (1 or more) |
 | `3-repetition_token_2.rb` | Repetition token: `?` (0 or 1) |
@@ -24,3 +27,8 @@ repetition tokens, anchors, character classes, and log-line parsing.
 ```bash
 ./0-simply_match_school.rb "Best School"
 ```
+
+### Requirements
+
+- Ruby 3.x
+- Scripts are executable (`chmod +x`) and start with `#!/usr/bin/env ruby`
