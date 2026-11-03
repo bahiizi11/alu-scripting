@@ -8,7 +8,7 @@ def recurse(subreddit, hot_list=None, after=None):
     if hot_list is None:
         hot_list = []
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {"User-Agent": "linux:alu.api_advanced:v1.0 (by /u/alu_student)"}
+    headers = {"User-Agent": "linux:alu.api_advanced:v1.0 (by /u/bahiizi11)"}
     params = {"limit": 100, "after": after}
     response = requests.get(url, headers=headers, params=params,
                             allow_redirects=False)
